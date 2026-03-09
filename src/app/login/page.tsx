@@ -4,7 +4,7 @@ export default function LoginPage(){
 
   return(
 
-    <div>
+    <div className="w-full h-full center">
       <LoginForm/>
     </div>
 

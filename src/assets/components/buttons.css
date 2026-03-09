@@ -1,0 +1,204 @@
+/* =========================================
+   BASE BUTTON
+========================================= */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+    width: fit-content;
+    min-height: 36px;
+
+    padding: .55rem 1rem;
+
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 1;
+
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+
+    cursor: pointer;
+    user-select: none;
+
+    transition:
+        background-color .15s ease,
+        border-color .15s ease,
+        color .15s ease,
+        box-shadow .15s ease,
+        transform .05s ease;
+
+    outline: none;
+}
+
+/* full width */
+
+.btn-block {
+    width: 100%;
+}
+
+/* =========================================
+   PRIMARY
+========================================= */
+
+.btn-primary {
+    color: var(--color-text-inverse);
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+    background: var(--color-primary-hover);
+    border-color: var(--color-primary-hover);
+}
+
+.btn-primary:active {
+    background: var(--color-primary-active);
+    border-color: var(--color-primary-active);
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 2px var(--color-primary-alpha);
+}
+
+/* =========================================
+   SECONDARY
+========================================= */
+
+.btn-secondary {
+    color: var(--color-text);
+    background: var(--color-surface);
+    border-color: var(--color-border);
+}
+
+.btn-secondary:hover {
+    background: var(--color-surface-muted);
+}
+
+/* =========================================
+   OUTLINE
+========================================= */
+
+.btn-outline {
+    color: var(--color-primary);
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.btn-outline:hover {
+    background: var(--color-primary-alpha);
+}
+
+/* =========================================
+   GHOST
+========================================= */
+
+.btn-ghost {
+    background: transparent;
+    color: var(--color-text);
+}
+
+.btn-ghost:hover {
+    background: var(--color-surface-muted);
+}
+
+/* =========================================
+   SUCCESS
+========================================= */
+
+.btn-success {
+    color: white;
+    background: var(--color-success);
+    border-color: var(--color-success);
+}
+
+.btn-success:hover {
+    filter: brightness(.95);
+}
+
+/* =========================================
+   WARNING
+========================================= */
+
+.btn-warning {
+    color: white;
+    background: var(--color-warning);
+    border-color: var(--color-warning);
+}
+
+.btn-warning:hover {
+    filter: brightness(.95);
+}
+
+/* =========================================
+   DANGER
+========================================= */
+
+.btn-danger {
+    color: white;
+    background: var(--color-danger);
+    border-color: var(--color-danger);
+}
+
+.btn-danger:hover {
+    filter: brightness(.95);
+}
+
+/* =========================================
+   SIZES
+========================================= */
+
+.btn-xs {
+    font-size: .75rem;
+    padding: .35rem .6rem;
+}
+
+.btn-sm {
+    font-size: .85rem;
+    padding: .45rem .75rem;
+}
+
+.btn-md {
+    font-size: .9rem;
+    padding: .55rem 1rem;
+}
+
+.btn-lg {
+    font-size: 1rem;
+    padding: .75rem 1.25rem;
+}
+
+/* =========================================
+   DISABLED
+========================================= */
+
+.btn:disabled,
+.btn-disabled {
+    cursor: not-allowed;
+    opacity: .6;
+    background: var(--color-disabled-bg);
+    color: var(--color-disabled-text);
+    border-color: var(--color-disabled-border);
+}
+
+/* =========================================
+   LOADING
+========================================= */
+
+.btn-loading {
+    pointer-events: none;
+    opacity: .7;
+}
+
+/* =========================================
+   RADIUS
+========================================= */
+
+.btn-rounded-xs { border-radius: var(--radius-xs); }
+.btn-rounded-sm { border-radius: var(--radius-sm); }
+.btn-rounded-md { border-radius: var(--radius-md); }
+.btn-rounded-lg { border-radius: var(--radius-lg); }
+.btn-rounded-xl { border-radius: var(--radius-xl); }
+.btn-rounded-full { border-radius: var(--radius-full); }
