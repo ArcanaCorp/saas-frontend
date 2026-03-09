@@ -1,0 +1,127 @@
+/* ===============================
+   BASE INPUT
+================================ */
+
+.input {
+    display: inline-flex;
+    align-items: center;
+
+    width: 100%;
+    padding: .55rem .9rem;
+
+    font-size: var(--font-size-sm);
+    line-height: 1.4;
+
+    color: var(--color-text);
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+
+    outline: none;
+
+    transition:
+        border-color .15s ease,
+        box-shadow .15s ease,
+        background-color .15s ease;
+
+    appearance: none;
+}
+
+/* ===============================
+   PLACEHOLDER
+================================ */
+
+.input::placeholder {
+    color: var(--color-text-muted);
+    opacity: .7;
+}
+
+/* ===============================
+   HOVER
+================================ */
+
+.input:hover {
+    border-color: var(--color-border-hover);
+}
+
+/* ===============================
+   FOCUS
+================================ */
+
+.input:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px var(--color-primary-alpha);
+}
+
+/* ===============================
+   DISABLED
+================================ */
+
+.input:disabled {
+    background: var(--color-surface-disabled);
+    color: var(--color-text-muted);
+    cursor: not-allowed;
+    opacity: .7;
+}
+
+/* ===============================
+   ERROR STATE
+================================ */
+
+.input-error {
+    border-color: var(--color-danger);
+}
+
+.input-error:focus {
+    border-color: var(--color-danger);
+    box-shadow: 0 0 0 2px var(--color-danger-alpha);
+}
+
+/* ===============================
+   SUCCESS STATE
+================================ */
+
+.input-success {
+    border-color: var(--color-success);
+}
+
+.input-success:focus {
+    border-color: var(--color-success);
+    box-shadow: 0 0 0 2px var(--color-success-alpha);
+}
+
+/* ===============================
+   SIZES
+================================ */
+
+.input-xs {
+    font-size: .75rem;
+    padding: .35rem .6rem;
+}
+
+.input-sm {
+    font-size: .85rem;
+    padding: .45rem .75rem;
+}
+
+.input-md {
+    font-size: .95rem;
+    padding: .55rem .9rem;
+}
+
+.input-lg {
+    font-size: 1rem;
+    padding: .75rem 1rem;
+}
+
+/* ===============================
+   RADIUS
+================================ */
+
+.input-rounded-xs { border-radius: var(--radius-xs); }
+.input-rounded-sm { border-radius: var(--radius-sm); }
+.input-rounded-md { border-radius: var(--radius-md); }
+.input-rounded-lg { border-radius: var(--radius-lg); }
+.input-rounded-xl { border-radius: var(--radius-xl); }
+.input-rounded-full { border-radius: var(--radius-full); }

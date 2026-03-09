@@ -1,0 +1,11 @@
+@import './utils/reset.css';
+@import './utils/colors.css';
+@import './utils/sizes.css';
+@import './utils/spacing.css';
+@import './utils/flex.css';
+@import './utils/grid.css';
+@import './utils/borders.css';
+
+@import './components/card.css';
+@import './components/inputs.css';
+@import './components/buttons.css';

@@ -1,0 +1,155 @@
+:root {
+
+    /* ========================================
+    BRAND PALETTE
+    ======================================== */
+
+    --azure-50:  #eef8ff;
+    --azure-100: #daefff;
+    --azure-200: #bde3ff;
+    --azure-300: #8fd3ff;
+    --azure-400: #5ab8ff;
+    --azure-500: #3499fd;
+    --azure-600: #1877f2;
+    --azure-700: #1664df;
+    --azure-800: #1950b4;
+    --azure-900: #1a468e;
+    --azure-950: #152c56;
+
+    /* ========================================
+    NEUTRAL SCALE
+    ======================================== */
+
+    --gray-50:  #fafafa;
+    --gray-100: #f4f4f5;
+    --gray-200: #e4e4e7;
+    --gray-300: #d4d4d8;
+    --gray-400: #a1a1aa;
+    --gray-500: #71717a;
+    --gray-600: #52525b;
+    --gray-700: #3f3f46;
+    --gray-800: #27272a;
+    --gray-900: #18181b;
+
+    /* ========================================
+    SUCCESS
+    ======================================== */
+
+    --success-50:  #ecfdf3;
+    --success-100: #d1fae5;
+    --success-200: #a7f3d0;
+    --success-300: #6ee7b7;
+    --success-400: #34d399;
+    --success-500: #10b981;
+    --success-600: #059669;
+    --success-700: #047857;
+
+    /* ========================================
+    WARNING
+    ======================================== */
+
+    --warning-50:  #fffbeb;
+    --warning-100: #fef3c7;
+    --warning-200: #fde68a;
+    --warning-300: #fcd34d;
+    --warning-400: #fbbf24;
+    --warning-500: #f59e0b;
+    --warning-600: #d97706;
+
+    /* ========================================
+    DANGER
+    ======================================== */
+
+    --danger-50:  #fef2f2;
+    --danger-100: #fee2e2;
+    --danger-200: #fecaca;
+    --danger-300: #fca5a5;
+    --danger-400: #f87171;
+    --danger-500: #ef4444;
+    --danger-600: #dc2626;
+    --danger-700: #b91c1c;
+
+    /* ========================================
+    BASE COLORS
+    ======================================== */
+
+    --white: #ffffff;
+    --black: #000000;
+
+    /* ========================================
+    SEMANTIC TOKENS
+    ======================================== */
+
+    /* primary */
+
+    --color-primary: var(--azure-600);
+    --color-primary-hover: var(--azure-700);
+    --color-primary-active: var(--azure-800);
+    --color-primary-alpha: rgba(24,119,242,.15);
+
+    /* background */
+
+    --color-background: var(--gray-50);
+    --color-surface: var(--white);
+    --color-surface-muted: var(--gray-100);
+
+    /* text */
+
+    --color-text: var(--gray-900);
+    --color-text-muted: var(--gray-500);
+    --color-text-inverse: var(--white);
+
+    /* border */
+
+    --color-border: var(--gray-200);
+    --color-border-hover: var(--gray-300);
+    --color-border-focus: var(--azure-500);
+
+    /* states */
+
+    --color-success: var(--success-600);
+    --color-success-bg: var(--success-50);
+    --color-success-alpha: rgba(16,185,129,.2);
+
+    --color-warning: var(--warning-500);
+    --color-warning-bg: var(--warning-50);
+    --color-warning-alpha: rgba(245,158,11,.2);
+
+    --color-danger: var(--danger-600);
+    --color-danger-bg: var(--danger-50);
+    --color-danger-alpha: rgba(239,68,68,.2);
+
+    /* disabled */
+
+    --color-disabled-bg: var(--gray-100);
+    --color-disabled-text: var(--gray-400);
+    --color-disabled-border: var(--gray-200);
+
+}
+
+/* background */
+
+.bg { background: var(--color-background); }
+.bg-surface { background: var(--color-surface); }
+.bg-primary { background: var(--color-primary); }
+
+/* text */
+
+.text { color: var(--color-text); }
+.text-muted { color: var(--color-text-muted); }
+.text-primary { color: var(--color-primary); }
+
+/* borders */
+
+.border { border: 1px solid var(--color-border); }
+.border-primary { border-color: var(--color-primary); }
+
+/* states */
+
+.bg-success { background: var(--color-success-bg); }
+.bg-warning { background: var(--color-warning-bg); }
+.bg-danger { background: var(--color-danger-bg); }
+
+.text-success { color: var(--color-success); }
+.text-warning { color: var(--color-warning); }
+.text-danger { color: var(--color-danger); }
