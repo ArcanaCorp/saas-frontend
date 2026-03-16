@@ -65,7 +65,7 @@ export default function Home() {
         color:"white",
         textAlign:"center"
       }}>
-        © 2026 Panel SaaS
+         2026 Panel SaaS
       </footer>
 
     </div>
