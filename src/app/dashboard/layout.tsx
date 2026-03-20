@@ -1,26 +1,15 @@
-import Sidebar from "../../components/Sidebar";
-import Navbar from "../../components/Navbar";
+import DashboardLayout from "@/components/DashboardLayout";
 
-export default function DashboardLayout({children}:any){
+export default function Layout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
 
   return(
-
-    <div style={{display:"flex"}}>
-
-      <Sidebar/>
-
-      <div style={{width:"100%"}}>
-
-        <Navbar/>
-
-        <div style={{padding:"20px"}}>
-          {children}
-        </div>
-
-      </div>
-
-    </div>
-
+    <DashboardLayout>
+      {children}
+    </DashboardLayout>
   )
 
 }

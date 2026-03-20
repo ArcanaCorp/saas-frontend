@@ -1,11 +1,9 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-
+import Link from "next/link";
+import { useAuth } from "../context/AuthContext";
 export default function Header(){
-
-  const router = useRouter();
-
+  const { token } = useAuth();
   return(
 
     <header style={{
@@ -22,21 +20,20 @@ export default function Header(){
 
       <div style={{display:"flex", gap:"10px"}}>
 
-        <button onClick={() => router.push("/login")}>
-          Iniciar sesión
-        </button>
+        <Link href="/login">
+          <button>Iniciar sesión</button>
+        </Link>
 
-        <button
-          onClick={() => router.push("/register")}
-          style={{
+        <Link href="/register">
+          <button style={{
             background:"#2563eb",
             color:"white",
             padding:"8px 14px",
             borderRadius:"5px"
-          }}
-        >
-          Crear cuenta
-        </button>
+          }}>
+            Crear cuenta
+          </button>
+        </Link>
 
       </div>
 

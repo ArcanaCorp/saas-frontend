@@ -1,12 +1,19 @@
-export default function Dashboard(){
+"use client";
+
+import MetricsCards from "@/components/MetricsCards";
+import ChartComponent from "@/components/ChartComponent";
+
+export default function DashboardPage(){
 
   return(
 
     <div>
 
-      <h1>Bienvenido al Panel Admin</h1>
+      <h1>Dashboard</h1>
 
-      <p>Aquí puedes gestionar el sistema.</p>
+      <MetricsCards />
+
+      <ChartComponent />
 
     </div>
 

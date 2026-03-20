@@ -6,33 +6,26 @@ export default function Sidebar(){
 
   return(
 
-    <div style={{
-      width:"200px",
-      height:"100vh",
+    <aside style={{
+      width:"250px",
       background:"#111",
-      color:"#fff",
+      color:"white",
       padding:"20px"
     }}>
 
-      <h2>Admin</h2>
+      <h2 style={{marginBottom:"30px"}}>Panel</h2>
 
-      <ul>
+      <nav style={{display:"flex", flexDirection:"column", gap:"15px"}}>
 
-        <li>
-          <Link href="/dashboard">Dashboard</Link>
-        </li>
+        <Link href="/dashboard">Dashboard</Link>
 
-        <li>
-          <Link href="/users">Usuarios</Link>
-        </li>
+        <Link href="/users">Usuarios</Link>
 
-        <li>
-          <Link href="/settings">Configuración</Link>
-        </li>
+        <Link href="/settings">Configuración</Link>
 
-      </ul>
+      </nav>
 
-    </div>
+    </aside>
 
   )
 
