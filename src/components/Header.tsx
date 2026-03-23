@@ -2,8 +2,11 @@
 
 import Link from "next/link";
 import { useAuth } from "../context/AuthContext";
+
 export default function Header(){
+
   const { token } = useAuth();
+
   return(
 
     <header style={{
@@ -16,7 +19,11 @@ export default function Header(){
       background:"#fff"
     }}>
 
-      <h2 style={{fontWeight:"600"}}>SaaS Panel</h2>
+      <Link href="/" style={{ textDecoration: "none", color: "black" }}>
+        <h2 style={{ fontWeight: "600", cursor: "pointer" }}>
+          SaaS Panel
+        </h2>
+      </Link>
 
       <div style={{display:"flex", gap:"10px"}}>
 
